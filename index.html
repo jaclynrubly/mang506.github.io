@@ -4,32 +4,73 @@
 <head>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-body{
-  background-color:#f5f5f0;
+header {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  background: #4286f4;
+  background-size: cover;
+  
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -10px;
+  }
+  
+  img {
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+  }
+ 
+  .box {
+    .my-name {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+    }
+    
+    .my-skills {
+      display: block;
+      text-align: center;
+      font-style: italic;
+      font-size: 22px;
+    }
+  }
 }
 
-
-
-@media (max-width: @screen-xs) {
-    .body{font-size: 5px;}
+.x-navbar {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-@media (max-width: @screen-sm) {
-    .body{font-size: 10px;}
+section.portfolio {
+  img {
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
 }
 
-@media (max-width: @screen-md){
-  .body{font-size:16px}
-}
-.margin-top{
-  margin-top:70px;
+p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-
-.w3-large
-{
-  font-size:1vw;
+.social-btn {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid rgba(0,0,0, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
 }
 
 </style>
@@ -47,158 +88,108 @@ body{
   
 </head>
 
-<body>
 
-  
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
-<div >
-    <ul class="w3-navbar  w3-large  w3-top w3-round w3-teal w3-left-align">
-        <li class="w3-hide-medium w3-hide-large w3-teal w3-text-white w3-opennav w3-right">
-            <a href="javascript:void(0);" class="w3-hover-white" onclick="myFunction()">☰</a>
-        </li>
-        <li><a href="#" class="w3-hover-white">Inert</a></li>
-        <div class="w3-right">
-            <li class="w3-hide-small"><a href="#About" class="w3-hover-white">About</a></li>
-            <li class="w3-hide-small"><a href="#Portfolio" class="w3-hover-white">Portfolio</a></li>
-            <li class="w3-hide-small"><a href="#Contact" class="w3-hover-white">Contact</a></li>
+<body id="top">]
+  <nav class="nav navbar-default navbar-fixed-top x-navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#top">Mikel Iromaka</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+           </li>
+           <li>
+             <a href="#contact">Contact</a>
+           </li>
+         </ul>
+       </div>
+    </div>
+  </nav>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="row">
+            <div class="col-lg-12">
+              <img class="img-responsive img-circle" src="https://avatars1.githubusercontent.com/u/19677076?v=3&s=40">
+            </div>
+            <div class="col-lg-6 col-lg-offset-3">
+              <div class="box">
+                <span class="my-name">Mikel Iromaka</span>
+                <span class="my-skills">Front-end Web Developer</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </header>
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="text-center text-muted" style="font-family: Montserrat, sans-serif">Portfolio</h2>
+      <hr>
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-responsive" src="http://placehold.it/350x150">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-responsive" src="http://placehold.it/350x150">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-responsive" src="http://placehold.it/350x150">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-responsive" src="http://placehold.it/350x150">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-responsive" src="http://placehold.it/350x150">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-responsive" src="http://placehold.it/350x150">
+        </div>
+      </div>
+    <div>
+  </section>
+  <section class="success" id="about">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center text-muted" style="font-family: Montserrat, sans-serif">About</h2>
+        <hr>
+      </div>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3">
+            <p class="text-center">I am front-end web developer with experience in HTML, CSS and JavaScript, including frameworks like Bootstrap and libraries like jQuery. In my free time, I like to contribute to open source projects around the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-center" id="contact">
+    <h2 class="text-center text-muted" style="font-family: Montserrat, sans-serif">Contact Me</h2>
+    <hr>
+    <ul class="list-inline">
+      <li>
+        <a href="www.facebook.com/mikel.iromaka" class="social-btn btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="https://plus.google.com/u/0/111325545250871858899" class="social-btn btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+      </li>
+      <li>
+        <a href="#" class="social-btn btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="www.dribbble.com/mikeliromaka" class="social-btn btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+      </li>
     </ul>
+  </footer>
 
-    <div id="demo" class="w3-hide w3-top w3-hide-large  w3-hide-medium" style="margin-top:48px;">
-        <ul class="w3-navbar w3-left-align w3-text-teal  w3-large w3-white">
-            <li><a href="#About" class="w3-hover-teal">About</a></li>
-            <li><a href="#Portfolio" class="w3-hover-teal">Portfolio</a></li>
-            <li><a href="#Contact" class="w3-hover-teal">Contact</a></li>
-        </ul>
-    </div>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("demo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
-
-    <div class="container margin-top ">
-        <div class="w3-container w3-justify row w3-lar w3-white w3-border w3-border-teal w3-round " id="About">
-            <div class="col-md-8 col-sm-8  col-xs-8">
-                <h3 class="w3-center w3-text-teal w3-padding-16"><strong>ABOUT</strong></h3>
-                <p>
-                    Front-End Developer and UX/UI designer, I am still basically a learner, but I know I will get there one day. I love solving programming related problems, they keep the mind and the brain sharp.
-                </p>
-            </div>
-            <!--end md-8-->
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <img src="https://media.licdn.com/dms/image/C5603AQFIXs-IEs0azg/profile-displayphoto-shrink_800_800/0?e=1547683200&v=beta&t=ELix55XspCECAjAT1ESBUTiUnLavbyCfLVWci0-UtTE" class="w3-circle w3-margin" style=" width:80%; max-width:350px">
-            </div>
-            <!--end--md-4-->
-
-        </div>
-        <!--end row-->
-        <div class="w3-container w3-teal w3-border w3-section w3-border-white w3-round w3-padding-32" id="Portfolio">
-            <div class="row">
-                <h3 class="w3-center w3-text-white "><strong>PORTFOLIO</strong></h3>
-                <div class="col-md-6 col-sm-6  col-xs-6 w3-center w3-section">
-                    <img src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/spoons-html-theme-for-portfolio-websites.jpg" class="w3-border  w3-round" style=" width:80%; max-width:500px;">
-                </div>
-                <div class="col-md-6 col-sm-6  col-xs-6 w3-center w3-section">
-                    <img src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/zap-one-page-parallax-business-html-template.jpg" class="w3-border w3-round" style=" width:80%; max-width:500px;">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-6  col-xs-6 w3-center w3-section">
-                    <img src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/intensy-fullscreen-corproate-html5-slider-template.jpg" class="w3-border w3-round" style=" width:80%; max-width:500px;">
-                </div>
-                <div class="col-md-6 col-sm-6  col-xs-6 w3-center w3-section">
-                    <img src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/carna-corporate-portfolio-site-template.jpg" class="w3-border w3-round" style=" width:80%; max-width:500px;">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-6  col-xs-6 w3-center w3-section">
-                    <img src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/tempo-fullscreen-html5-portfolio-site-template.jpg" class="w3-border w3-round" style="width:80%; max-width:500px;">
-                </div>
-                <div class="col-md-6 col-sm-6  col-xs-6 w3-center w3-section">
-                    <img src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/ova-portfolio-gallery-html5-css-website-template.jpg" class="w3-border w3-round" style=" width:80%; max-width:500px;">
-                </div>
-            </div>
-
-        </div>
-        <!--end portfolio-->
-
-        <div class="container  w3-section w3-lar w3-white w3-border w3-border-teal w3-round w3-padding" id="Contact">
-            <h2 class="w3-text-teal w3-center"><strong>Contact Me</strong></h2>
-            <div class="row">
-
-                <div class="col-md-6 col-sm-6 ">
-                    <form class="w3-container w3-border w3-round w3-border-teal w3-padding">
-                        <input type="text" placeholder="Name" class="w3-input w3-margin-top" />
-                        <input type="text" placeholder="Email Address" class="w3-input" />
-                        <input type="text" placeholder="Phone Number" class="w3-input" />
-                        <input type="text" placeholder="Message" class="w3-input w3-margin-bottom" style="height:150px;" />
-                        <button type="submit" value="Submit" class="w3-btn w3-border w3-white w3-text-teal w3-hover-teal w3-round w3-border-teal">Submit</button>
-                    </form>
-                </div>
-                <!--end md-6-->
-
-                <div class="col-md-6 col-sm-6 ">
-                    <div class="w3-container w3-border w3-round w3-border-teal w3-margin-top w3-padding">
-                        <p>
-                            Want to get in touch with me? Be it to request more info about myself or my experience, weird questions like how to defy gravity(just kidding!!) or bending the space time continnum... just feel free to drop me a line anytime.
-                        </p>
-                        <p>
-                            I would reply A.S.A.P.
-                        </p>
-
-                    </div>
-                </div>
-                <!--end md-6-->
-
-            </div>
-            <!--end row-->
-
-        </div>
-        <!--end contact-->
-    </div>
-    <!--end container-->
-    <footer class="w3-container w3-padding-xxlarge row w3-teal w3-round">
-        <div class="col-md-6 w3-center col-sm-6 col-xs-6">
-            <h4>
-                <strong>About Page</strong>
-            </h4>
-            <p>Designed by I3i744L</p>
-        </div>
-
-        <div class="col-md-6 w3-center col-sm-6 col-xs-6">
-            <h4>
-                <strong>Meet Me On</strong>
-            </h4>
-            <p>
-                <a class="btn btn-social-icon btn-twitter w3-round-jumbo w3-border w3-padding-small w3-border-white w3-hover-white" href="https://github.com/SBilaal" target="_blank">
-                    <span class="fa fa-github "></span>
-                </a>
-
-                <a class="btn btn-social-icon btn-twitter w3-round-jumbo w3-border w3-padding-small w3-border-white w3-hover-white" href="https://web.facebook.com/Bilaal1S" target="_blank">
-                    <span class="fa fa-facebook"></span>
-                </a>
-
-                <a class="btn btn-social-icon btn-twitter w3-round-jumbo w3-border w3-padding-small w3-border-white w3-hover-white" href="https://www.linkedin.com/in/bilaal-s-154a3311b" target="_blank">
-                    <span class="fa fa-linkedin"></span>
-                </a>
-            </p>
-
-        </div>
-
-    </footer>
-
-</div>
-  
   
 
 </body>
